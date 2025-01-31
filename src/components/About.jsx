@@ -23,29 +23,31 @@ const ServiceCard = ({ title, icon, index }) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+		<>
+			<motion.div variants={textVariant()}>
+				<p className={styles.sectionSubText}>Introduction</p>
+				<h2 className={styles.sectionHeadText}>Overview.</h2>
+			</motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in JavaScript, TypeScript, React.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems. Let's work together to
-        bring your ideas to life!
-      </motion.p>
+			<motion.p
+				variants={fadeIn('', '', 0.1, 1)}
+				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+			>
+				Привет! Меня зовут Нурислам, я frontend-разработчик, увлеченный
+				созданием современных и удобных веб-приложений. Постоянно развиваю свои
+				навыки и стремлюсь к совершенству в каждом проекте. Технологии, с
+				которыми я работаю: HTML, CSS, SASS, JavaScript, TypeScript, React,
+				Redux, React Router, React Hook Form, Git, GitHub, NPM, Vercel, Material
+				UI, Styled-components, Figma.
+			</motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </>
-  );
+			<div className='mt-20 flex flex-wrap gap-10'>
+				{services.map((service, index) => (
+					<ServiceCard key={service.title} index={index} {...service} />
+				))}
+			</div>
+		</>
+	);
 };
 
 export default SectionWrapper(About, "about");
