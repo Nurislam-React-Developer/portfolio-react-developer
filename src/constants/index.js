@@ -170,7 +170,7 @@ const projects = [
 	{
 		name: 'Job IT',
 		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+			'Веб-приложение, позволяющее пользователям искать вакансии, просматривать предполагаемые диапазоны заработной платы для должностей и находить доступные вакансии в зависимости от их текущего местонахождения.',
 		tags: [
 			{
 				name: 'react',
